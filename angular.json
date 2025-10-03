@@ -14,7 +14,7 @@
           "builder": "@angular-devkit/build-angular:application",
           "options": {
             "outputPath": {
-              "base": "docs/gt-voice-claimer",
+              "base": "dist/gt-voice-claimer",
               "browser": ""
             },
             "index": "src/index.html",
