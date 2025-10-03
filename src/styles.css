@@ -1,0 +1,209 @@
+/* Application-wide Styles */
+@font-face {
+  font-family: GT;
+  src: url(assets/FOT-NewCinemaAStd-D.otf) format("opentype");
+}
+
+@font-face {
+  font-family: GTB;
+  src: url(assets/fot-chiarostd-b.otf) format("opentype");
+}
+
+html, body {
+  background-color: #00ff00;
+}
+
+h1 {
+    color: #369;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 250%;
+}
+h2, h3 {
+    color: #444;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+}
+body, input[type="text"], button {
+    color: #333;
+    font-family: Cambria, Georgia, serif;
+}
+
+.character {
+  position: relative;
+  width: 1500px;
+  overflow: hidden;
+  /*border: 5px dashed red;*/
+  margin-bottom: 20px;
+}
+
+
+.button-pause {
+  position: absolute;
+  height: 150px;
+  width: 150px;
+  left:405px;
+  bottom:-5px;
+  font-family: "GTB";
+  margin-bottom: 6px;
+}
+
+.button-left {
+  position: absolute;
+  height: 150px;
+  width: 500px;
+  left: 405px;
+  bottom:-5px;
+  font-family: "GTB";
+  margin-bottom: 6px;
+}
+
+.button-left button {
+  padding-left:20px;
+}
+
+.button-right {
+  position: absolute;
+  right: 0px;
+  bottom:-5px;
+  height: 150px;
+  width: 150px;
+  font-family: "GT";
+  margin-bottom: 6px;
+}
+
+
+
+.button-middle-right {
+  background-color: black;
+  height: 61px;
+  width: 61px;
+  padding: 4px;
+}
+
+button {
+  background-color: #FF1700;
+  height: 100%;
+  width: 100%;
+  /*border-radius: 15px;*/
+  border: 1px;
+  border-radius: 4em;
+  box-shadow: 
+    inset 0 0 0 15px #1E2938,
+    inset 0 0 0 30px white;
+  cursor: pointer;
+  color: white;
+  font-size: 1.2rem;
+  padding: 1rem 0 1rem;
+  font-family: "GTB";
+}
+
+button:hover {
+    background-color: #C20000;
+    color: white;
+}
+button:disabled {
+  background-color: #808484;
+  color: #aaa;
+  cursor: auto;
+}
+
+button:active {
+  background-color: #FF8000;
+  color: #fafafa;
+}
+
+/* everywhere else */
+* {
+    font-family: "GT";
+}
+
+.wrapper {
+  height:200em;
+  width:800px;
+  /*border: 5px solid red;*/
+}
+
+.character-list {
+    margin: 0 0 2em 0;
+    list-style-type: none;
+    padding: 0;
+}
+
+.character .portrait {
+  position: absolute;
+  margin-bottom:-82px;
+}
+
+.side-portrait {
+  position: relative;
+  flex: 1;
+  width: 100%;
+  height: 384px; /*<-- This can maybe fix spacing issues*/
+  padding: 0;
+  align-items: stretch;
+}
+
+.timer {
+  font-family: "GTB";
+  font-size: 85px;
+  line-height: 1em;
+  margin-left: 0.75em;
+  /*-webkit-text-stroke: 2px black;*/
+
+}
+
+.pause {
+  font-family: "GT";
+  font-size: 35px;
+  line-height: 1.5em;
+  margin-left: 0.25em;
+}
+
+.pause-img {
+  height: 55px;
+  margin: 10px 0 0 0;
+}
+
+.delete {
+  font-family: "GTB";
+  color: white;
+  font-size: 69px;
+  line-height: 1.6em;
+  /*-webkit-text-stroke: 2px black;*/
+}
+
+.voice {
+  position: absolute;
+  background-color: white;
+  height: 95%;
+  margin-left: 400px;
+  width: 100%;
+  border-radius: 6em;
+  border: 10px black solid;
+}
+
+.voice input{
+  font-size: 100px;
+  color: red;
+  height: 100%;
+  width: 97%;
+  margin-top: -70px;
+  padding-left: 60px;
+  border: none;
+  background: none;
+  font-family: "GT";
+}
+
+.voice input::placeholder {
+  color: black;
+}
+
+.character-select {
+  font-size: 40px;
+}
+
+.delete {
+  width:50px;
+  height:50px;
+  padding: 0px;
+}

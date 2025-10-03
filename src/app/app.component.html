@@ -1,0 +1,14 @@
+<div class="form-group">
+  <select #newChar class="character-select" (change)="addCharacter(newChar.value)" id="char" [(ngModel)]="selectedChar">
+    <option value="0">- Select Character -</option>
+    <option *ngFor="let char of allCharacters" [value]="char.id">{{char.name}}</option>
+  </select>
+</div>
+
+<div class="wrapper">
+  <ul class="character-list">
+    <li *ngFor="let char of characters; let i = index">
+      <app-character-detail (deleteEvent)="deleteCharacter($event)" [character]="char" [index]="i"></app-character-detail>
+    </li>
+  </ul>
+</div>
