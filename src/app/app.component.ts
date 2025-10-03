@@ -19,7 +19,7 @@ import { CharacterDetailComponent } from './character-detail/character-detail.co
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'PW-voice-claimer';
+  title = 'GT-voice-claimer';
   allCharacters = CHARACTERS;
   
   characters: Character[] = [];

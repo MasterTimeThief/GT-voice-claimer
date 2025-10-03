@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "PW-voice-claimer": {
+    "GT-voice-claimer": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/pw-voice-claimer",
+            "outputPath": "dist/gt-voice-claimer",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -57,10 +57,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "PW-voice-claimer:build:production"
+              "buildTarget": "GT-voice-claimer:build:production"
             },
             "development": {
-              "buildTarget": "PW-voice-claimer:build:development"
+              "buildTarget": "GT-voice-claimer:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -68,7 +68,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "PW-voice-claimer:build"
+            "buildTarget": "GT-voice-claimer:build"
           }
         },
         "test": {
